@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to BuzakChini Application"
+        android:textSize="30dp"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:text="Vira"
+        android:id="@+id/viraButton"
+        android:layout_margin="20dp"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:text="تنظیمات "
+        android:id="@+id/settingButton"
+        android:layout_margin="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="فهرست"
+        android:textSize="30dp"
+        android:layout_margin="20dp" />
+
+</LinearLayout>
