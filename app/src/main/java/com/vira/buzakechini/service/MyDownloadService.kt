@@ -9,7 +9,7 @@ import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.StorageReference
 import com.google.firebase.storage.ktx.storage
-import com.vira.buzakechini.MainActivity
+import com.vira.buzakechini.activities.MainActivity
 import vira.buzakechini.R
 import com.google.firebase.storage.ktx.component1
 import com.google.firebase.storage.ktx.component2

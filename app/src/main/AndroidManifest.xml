@@ -13,15 +13,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BuzakChini"
         tools:targetApi="31">
-        <activity android:name="com.vira.buzakechini.MainActivity"
+        <activity android:name="com.vira.buzakechini.activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.vira.buzakechini.SettingActivity"/>
+        <activity android:name="com.vira.buzakechini.activities.SettingActivity"/>
 
-        <activity android:name="com.vira.buzakechini.ContentActivity" />
+        <activity android:name="com.vira.buzakechini.activities.ContentActivity" />
+        <activity android:name="com.vira.buzakechini.activities.SampleActivity" />
     </application>
 </manifest>

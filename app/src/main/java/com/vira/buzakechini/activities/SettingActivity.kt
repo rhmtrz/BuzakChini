@@ -1,4 +1,4 @@
-package com.vira.buzakechini
+package com.vira.buzakechini.activities
 
 import android.content.Intent
 import android.os.Bundle

@@ -3,5 +3,7 @@
     <string name="download_success">Download succeed</string>
     <string name="download_failure">Download failed</string>
     <string name="progress_downloading">Downloading</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

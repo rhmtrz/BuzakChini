@@ -1,4 +1,4 @@
-package com.vira.buzakechini
+package com.vira.buzakechini.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
