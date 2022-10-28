@@ -1,7 +1,8 @@
-package com.example.buzakchini
+package com.vira.buzakechini
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import vira.buzakechini.R
 
 class ContentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

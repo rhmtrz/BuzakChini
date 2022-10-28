@@ -1,9 +1,10 @@
-package com.example.buzakchini
+package com.vira.buzakechini
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import vira.buzakechini.R
 
 class SettingActivity : AppCompatActivity() {
     override fun onCreate(instaState: Bundle?) {

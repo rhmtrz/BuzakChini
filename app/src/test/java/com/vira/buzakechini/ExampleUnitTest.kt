@@ -1,4 +1,4 @@
-package com.example.buzakchini
+package com.vira.buzakechini
 
 import org.junit.Test
 

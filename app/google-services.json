@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1080328247630",
+    "project_id": "buzakechini-564c1",
+    "storage_bucket": "buzakechini-564c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080328247630:android:40ee1268c50c35ada0261f",
+        "android_client_info": {
+          "package_name": "com.vira.buzakchini"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1080328247630-n0b9atggn9ue7j105anfi4tsqca5vtum.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAbm__lWG1Sc_FJ-i0zkvmSRowgdzEEho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1080328247630-n0b9atggn9ue7j105anfi4tsqca5vtum.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

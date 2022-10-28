@@ -1,7 +1,8 @@
-package com.example.buzakchini
+package com.vira.buzakechini
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import vira.buzakechini.R
 
 class SampleActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

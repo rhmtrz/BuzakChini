@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Buzak Chini</string>
+    <string name="download_success">Download succeed</string>
+    <string name="download_failure">Download failed</string>
+    <string name="progress_downloading">Downloading</string>
+
 </resources>
