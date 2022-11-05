@@ -2,6 +2,7 @@ package com.vira.buzakechini.activities
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
@@ -14,9 +15,7 @@ import vira.buzakechini.R
 
 import com.google.firebase.storage.ktx.component1
 import com.google.firebase.storage.ktx.component2
-import com.vira.buzakechini.fragments.ContentsListFragment
-import com.vira.buzakechini.fragments.MainFragment
-import com.vira.buzakechini.fragments.SettingFragment
+import com.vira.buzakechini.fragments.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,32 +29,36 @@ class MainActivity : AppCompatActivity() {
 //        }
 
 
+
         val navMenu = findViewById<BottomNavigationView>(R.id.navMenu)
         navMenu.selectedItemId = R.id.home
         supportFragmentManager.beginTransaction().replace(R.id.navbarHostFragment, MainFragment()).commit()
 
+
+
         navMenu.setOnItemSelectedListener { item ->
-            lateinit var selectedFragment: Fragment
             when(item.itemId) {
                 R.id.home -> {
-                    selectedFragment = MainFragment()
-                }
-                R.id.profile -> {
-                    selectedFragment = SettingFragment()
-
-                }
-                R.id.contentList -> {
-                    selectedFragment = ContentsListFragment()
+                    supportFragmentManager.beginTransaction().replace(R.id.navbarHostFragment, MainFragment()).commit()
+                    return@setOnItemSelectedListener true
                 }
                 R.id.setting -> {
-                    selectedFragment = SettingFragment()
+                    supportFragmentManager.beginTransaction().replace(R.id.navbarHostFragment, SettingFragment()).commit()
+                    return@setOnItemSelectedListener true
+                }
+                R.id.profile -> {
+                    supportFragmentManager.beginTransaction().replace(R.id.navbarHostFragment, ProfileFragment()).commit()
+                    return@setOnItemSelectedListener true
+                }
+                R.id.storyList -> {
+                    supportFragmentManager.beginTransaction().replace(R.id.navbarHostFragment, storyFragment()).commit()
+                    return@setOnItemSelectedListener true
                 }
             }
-            supportFragmentManager.beginTransaction().replace(R.id.navbarHostFragment, selectedFragment).commit()
-            true
+
+            return@setOnItemSelectedListener false
         }
-
-
+        
     }
 
 

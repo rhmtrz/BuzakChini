@@ -20,9 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.vira.buzakechini.activities.SettingActivity"/>
 
         <activity android:name="com.vira.buzakechini.activities.ContentActivity" />
-        <activity android:name="com.vira.buzakechini.activities.SampleActivity" />
     </application>
 </manifest>

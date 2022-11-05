@@ -3,7 +3,7 @@
 
     <item
         android:title="Content list"
-        android:id="@+id/contentList"
+        android:id="@+id/storyList"
         android:icon="@drawable/list_icon"
         />
     <item

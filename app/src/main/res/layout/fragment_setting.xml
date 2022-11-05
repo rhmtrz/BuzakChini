@@ -4,10 +4,16 @@
     android:layout_height="match_parent"
     tools:context="com.vira.buzakechini.fragments.SettingFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back Main Screen"
+        />
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="فهرست داستاها "
+        android:textSize="30dp"
+        android:textColor="#FF0000"
+        />
 </FrameLayout>
