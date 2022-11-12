@@ -51,7 +51,6 @@ class MainActivity : AppCompatActivity() {
                     return@setOnItemSelectedListener true
                 }
                 R.id.storyList -> {
-                    supportFragmentManager.beginTransaction().replace(R.id.navbarHostFragment, storyFragment()).commit()
                     return@setOnItemSelectedListener true
                 }
             }
