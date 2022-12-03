@@ -4,6 +4,9 @@
 
 buildscript {
 
+    ext {
+        compose_version = '1.3.2'
+    }
 
     // デバッグ用: true に設定すると wss ではなく ws で接続できる
     ext.usesCleartextTraffic = false
@@ -16,7 +19,9 @@ buildscript {
 
 
     dependencies {
-        classpath 'com.google.gms:google-services:4.3.13'
+        classpath 'com.google.gms:google-services:4.3.14'
+        classpath 'com.android.tools.build:gradle:7.1.3'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.0'
 
     }
 
@@ -25,7 +30,7 @@ buildscript {
 plugins {
     id 'com.android.application' version '7.2.1' apply false
     id 'com.android.library' version '7.2.1' apply false
-    id 'org.jetbrains.kotlin.android' version '1.7.10' apply false
+    id 'org.jetbrains.kotlin.android' version '1.7.20' apply false
 
 }
 
@@ -33,6 +38,8 @@ allprojects {
 
 
     repositories {
+
+        maven { url "https://jitpack.io" }
         mavenLocal()
         google()  // Google's Maven repository
         mavenCentral()  // Maven Central repository

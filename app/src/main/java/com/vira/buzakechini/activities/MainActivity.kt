@@ -1,20 +1,10 @@
 package com.vira.buzakechini.activities
 
-import android.content.Intent
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
-import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
-import com.google.android.material.bottomnavigation.BottomNavigationItemView
-import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.navigation.NavigationView
-import com.google.firebase.ktx.Firebase
-import com.google.firebase.storage.ktx.storage
-import vira.buzakechini.R
 
-import com.google.firebase.storage.ktx.component1
-import com.google.firebase.storage.ktx.component2
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import vira.buzakechini.R
 import com.vira.buzakechini.fragments.*
 
 class MainActivity : AppCompatActivity() {
