@@ -6,5 +6,12 @@ import androidx.recyclerview.widget.RecyclerView
 import vira.buzakechini.R
 
 class StoryViewHolderList(item: View) : RecyclerView.ViewHolder(item) {
-    val list: TextView = item.findViewById(R.id.Text1)
+    val title: TextView = item.findViewById(R.id.titleText)
+    val author: TextView = item.findViewById(R.id.authorText)
+
+    init {
+        item.setOnClickListener {
+
+        }
+    }
 }
