@@ -8,10 +8,4 @@ import vira.buzakechini.R
 class StoryViewHolderList(item: View) : RecyclerView.ViewHolder(item) {
     val title: TextView = item.findViewById(R.id.titleText)
     val author: TextView = item.findViewById(R.id.authorText)
-
-    init {
-        item.setOnClickListener {
-
-        }
-    }
 }

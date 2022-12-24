@@ -1,4 +1,4 @@
-package com.vira.buzakechini
+package com.vira.buzakechini.datastorage
 
 data class Story(
     val id: Int,

@@ -1,35 +1,7 @@
-package com.vira.buzakechini
+package com.vira.buzakechini.datastorage
 
-import android.content.res.Resources
-
-fun storyList() : List<Story> {
-
-    return listOf(
-        Story(
-            id = 1,
-            title = "Rahmat",
-            author = "Rezaei",
-            content = sampleMarkdown
-        ),
-        Story(
-            id = 1,
-            title = "マリオ",
-            author = "ルイージ",
-            content = sampleMarkdown
-        ),
-        Story(
-            id = 1,
-            title = "ピーチ",
-            author = "クッパ",
-            content = sampleMarkdown
-        ),
-    )
-}
-
-
-
-
-private val sampleMarkdown = """
+object SampleStory3 {
+    val content = """
   # Demo
   Based on [this cheatsheet][cheatsheet]
   ---
@@ -192,4 +164,4 @@ private val sampleMarkdown = """
   [1]: http://slashdot.org
   [link text itself]: http://www.reddit.com
 """.trimIndent()
-
+}

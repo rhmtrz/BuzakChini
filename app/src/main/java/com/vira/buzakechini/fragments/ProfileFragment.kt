@@ -1,6 +1,5 @@
 package com.vira.buzakechini.fragments
 
-import android.R
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,8 +9,9 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.vira.buzakechini.Story
+import com.vira.buzakechini.datastorage.Story
 import com.vira.buzakechini.activities.ContentActivity
+import com.vira.buzakechini.fragments.adapter.StoryListAdapter
 
 
 class ProfileFragment : Fragment() {

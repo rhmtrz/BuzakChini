@@ -1,13 +1,12 @@
-package com.vira.buzakechini.fragments
+package com.vira.buzakechini.fragments.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.vira.buzakechini.Story
-import com.vira.buzakechini.fragments.placeholder.StoryViewHolderList
-import com.vira.buzakechini.storyList
+import com.vira.buzakechini.datastorage.Story
+import com.vira.buzakechini.datastorage.storyList
 import vira.buzakechini.R
 
 class StoryListAdapter(
@@ -27,7 +26,7 @@ class StoryListAdapter(
             }
         }
 
-        /* Bind flower name and image. */
+        /* Bind story */
         fun bind(story: Story) {
             currentStory = story
             title.text = story.title
