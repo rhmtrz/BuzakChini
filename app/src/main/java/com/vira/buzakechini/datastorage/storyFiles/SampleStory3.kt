@@ -1,4 +1,4 @@
-package com.vira.buzakechini.datastorage
+package com.vira.buzakechini.datastorage.storyFiles
 
 object SampleStory3 {
     val content = """
