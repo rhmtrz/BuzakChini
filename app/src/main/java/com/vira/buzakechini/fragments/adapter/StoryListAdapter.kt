@@ -16,6 +16,8 @@ class StoryListAdapter(
     inner class StoryViewHolder(item: View, val onClick: (Story) -> Unit) : RecyclerView.ViewHolder(item) {
         private val title: TextView = item.findViewById(R.id.titleText)
         private val author: TextView = item.findViewById(R.id.authorText)
+        private val director: TextView = item.findViewById(R.id.directorText)
+
         private var currentStory: Story? = null
 
         init {
@@ -29,8 +31,9 @@ class StoryListAdapter(
         /* Bind story */
         fun bind(story: Story) {
             currentStory = story
-            title.text = story.title
+            title.text =  story.title
             author.text = story.author
+            director.text = story.director
         }
 
     }

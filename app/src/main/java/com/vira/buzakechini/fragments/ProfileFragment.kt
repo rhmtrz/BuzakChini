@@ -31,6 +31,7 @@ class ProfileFragment : Fragment() {
         // Inflate the layout for this fragment
         val view =  inflater.inflate(vira.buzakechini.R.layout.fragment_profile, container, false)
         val recyclerView = view.findViewById<RecyclerView>(vira.buzakechini.R.id.recyclerList)
+        recyclerView.layoutDirection = View.LAYOUT_DIRECTION_RTL
         val linearLayoutManager = LinearLayoutManager(view.context)
         val adapter = StoryListAdapter { story -> adapterOnClick(story)}
 

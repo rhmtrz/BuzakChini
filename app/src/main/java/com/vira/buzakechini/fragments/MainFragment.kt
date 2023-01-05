@@ -31,7 +31,7 @@ class MainFragment : Fragment() {
             setContent {
                 MaterialTheme {
                     MarkDown(
-                        text = "sampleMarkdown",
+                        text = " # این نمونه از نوشته است که به اسم رشته یاد میشود.",
                         modifier = Modifier.fillMaxSize()
                     )
                 }
@@ -41,17 +41,6 @@ class MainFragment : Fragment() {
 
 
         return view
-    }
-
-    fun getFileFromAssets(context: Context, fileName: String): File = File(context.cacheDir, fileName)
-    .also {
-        if (!it.exists()) {
-            it.outputStream().use { cache ->
-                context.assets.open(fileName).use { inputStream ->
-                    inputStream.copyTo(cache)
-                }
-            }
-        }
     }
 
 
