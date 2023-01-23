@@ -24,11 +24,15 @@ android {
         }
     }
 
-
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    buildFeatures {
+        viewBinding true
+    }
+
     kotlinOptions {
         jvmTarget = '1.8'
     }
@@ -56,11 +60,15 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     implementation 'com.github.mukeshsolanki:MarkdownView-Android:2.0.0'
-
+    def markdown_version = "4.6.2"
+    implementation "io.noties.markwon:core:$markdown_version"
+    implementation  "io.noties.markwon:html:$markdown_version"
     implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation platform('com.google.firebase:firebase-bom:31.0.1')
     implementation 'com.google.firebase:firebase-storage'
     implementation 'com.google.firebase:firebase-storage-ktx'
+
+    implementation 'com.google.code.gson:gson:2.8.6'
 
 
 }

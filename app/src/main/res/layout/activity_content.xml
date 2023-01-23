@@ -4,9 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.compose.ui.platform.ComposeView
-        android:id="@+id/markdown"
+    <TextView
+        android:id="@+id/working_example_text"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textSize="24sp" />
 </LinearLayout>
