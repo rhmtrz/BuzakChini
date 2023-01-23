@@ -26,9 +26,6 @@ class ContentActivity : AppCompatActivity() {
 
         val content = intent.getStringExtra("Content")
 
-//        val markdown : ComposeView = findViewById<View>(R.id.markdown) as ComposeView
-//        markdown.layoutDirection = View.LAYOUT_DIRECTION_RTL
-
         val markwon = Markwon.builder(this)
             .usePlugin(HtmlPlugin.create())
             .build()
@@ -40,18 +37,6 @@ class ContentActivity : AppCompatActivity() {
         val spanned = markwon.render(node)
 
         markwon.setParsedMarkdown(contentView, spanned)
-
-//        markdown.apply {
-//            setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnViewTreeLifecycleDestroyed)
-//            setContent {
-//                MaterialTheme {
-//                    MarkDown(
-//                        text = content!!,
-//                        modifier = Modifier.fillMaxSize()
-//                    )
-//                }
-//            }
-//        }
 
 
     }
