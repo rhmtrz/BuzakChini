@@ -14,14 +14,10 @@ import com.vira.buzakechini.activities.ContentActivity
 import com.vira.buzakechini.fragments.adapter.StoryListAdapter
 
 
-class ProfileFragment : Fragment() {
+class StoryListFragment : Fragment() {
 
     private val recyclerView: RecyclerView? = null
     private var nav: BottomNavigationView? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -29,7 +25,7 @@ class ProfileFragment : Fragment() {
     ): View? {
 
         // Inflate the layout for this fragment
-        val view =  inflater.inflate(vira.buzakechini.R.layout.fragment_profile, container, false)
+        val view =  inflater.inflate(vira.buzakechini.R.layout.fragment_story_list, container, false)
         val recyclerView = view.findViewById<RecyclerView>(vira.buzakechini.R.id.recyclerList)
         recyclerView.layoutDirection = View.LAYOUT_DIRECTION_RTL
         val linearLayoutManager = LinearLayoutManager(view.context)

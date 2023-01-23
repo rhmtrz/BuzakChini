@@ -13,20 +13,17 @@ class MainActivity : AppCompatActivity() {
 
 
         val navMenu = findViewById<BottomNavigationView>(R.id.navMenu)
-        navMenu.selectedItemId = R.id.home
-        supportFragmentManager.beginTransaction().replace(R.id.navbarHostFragment, MainFragment()).commit()
+        navMenu.selectedItemId = R.id.storyList
+        supportFragmentManager.beginTransaction().replace(R.id.navbarHostFragment, StoryListFragment()).commit()
 
         navMenu.setOnItemSelectedListener { item ->
             when(item.itemId) {
-                R.id.home -> {
-                    supportFragmentManager.beginTransaction().replace(R.id.navbarHostFragment, MainFragment()).commit()
-                    return@setOnItemSelectedListener true
-                }
-                R.id.profile -> {
-                    supportFragmentManager.beginTransaction().replace(R.id.navbarHostFragment, ProfileFragment()).commit()
-                    return@setOnItemSelectedListener true
-                }
                 R.id.storyList -> {
+                    supportFragmentManager.beginTransaction().replace(R.id.navbarHostFragment, StoryListFragment()).commit()
+                    return@setOnItemSelectedListener true
+                }
+                R.id.setting -> {
+                    supportFragmentManager.beginTransaction().replace(R.id.navbarHostFragment, SettingFragment()).commit()
                     return@setOnItemSelectedListener true
                 }
             }

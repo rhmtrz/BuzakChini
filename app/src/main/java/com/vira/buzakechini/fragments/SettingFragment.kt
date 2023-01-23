@@ -21,7 +21,7 @@ import java.io.File
 import java.io.IOException
 
 
-class MainFragment : Fragment() {
+class SettingFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
